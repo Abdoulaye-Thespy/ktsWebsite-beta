@@ -30,7 +30,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
 }
 
 /*--------------------------------------------------------------
@@ -164,6 +165,8 @@ h6 {
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  width: 700px;
+
 }
 
 #header .logo a {
@@ -1795,4 +1798,17 @@ section {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
+}
+
+.my-logo {
+  width: 310px;
+}
+
+#counts p {
+  font-size: 22px;
+  font-weight: bold;
+}
+.percentage {
+  margin-left: 105px !important;
+  margin-top: -25px;
 }
