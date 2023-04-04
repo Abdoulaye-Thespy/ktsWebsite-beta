@@ -1832,6 +1832,7 @@ section {
   top: 150%;
   left: 50%;
   margin-left: -60px;
+  font-size: 20px;
 }
 
 .tooltip .tooltiptext::after {
@@ -1847,4 +1848,11 @@ section {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.count-box i {
+  margin-top: -8px;
+}
+.tooltiptext {
+  font-size: 20px;
 }
