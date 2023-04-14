@@ -4,14 +4,10 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
- const submitFormQuote = (name, email, subject, message) => {
-    //  console.log(name);
-    //  console.log(email);
-    //  console.log(subject);
-    //  console.log(message);
+ const submitFormQuote = (name, email, phone, area, school, message) => {
 
     // POST request using fetch()
-    fetch("https://18bsbinhgi.execute-api.us-east-1.amazonaws.com/develop/", {
+    fetch("https://18bsbinhgi.execute-api.us-east-1.amazonaws.com/develop/quote", {
 
             // Adding method type
             method: "POST",
@@ -21,8 +17,10 @@
             body: JSON.stringify({
                 name: name,
                 email: email,
-                subject: subject,
-                message: message,
+                phone: phone,
+                area: area,
+                school: school,
+                message: message
             }),
         })
 
@@ -36,7 +34,7 @@
 
 const validateInputQuote = (event) => {
     event.preventDefault();
-    let elements = document.getElementsByClassName('form-control2');
+    let elements = document.getElementsByClassName('form-control3');
     let submit = true;
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
@@ -44,12 +42,6 @@ const validateInputQuote = (event) => {
     const area = document.getElementById("address").value;
     const school = document.getElementById("school").value;
     const message = document.getElementById("quote-message").value;
-    console.log(name);
-    console.log(email);
-    console.log(phone);
-    console.log(school);
-    console.log(area);
-    console.log(message);
 
 
     for (let i = 0, im = elements.length; im > i; i++) {
@@ -59,8 +51,9 @@ const validateInputQuote = (event) => {
             submit = false;
         }
     }
+
     if (submit) {
-        submitFormQuote(name, email, phone, school, message);
+        submitFormQuote(name, email, phone, area, school, message);
     }
 
 
