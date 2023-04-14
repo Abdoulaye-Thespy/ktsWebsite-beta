@@ -4,7 +4,7 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
- const submitForm = (name, email, subject, message) => {
+ const submitFormQuote = (name, email, subject, message) => {
     //  console.log(name);
     //  console.log(email);
     //  console.log(subject);
@@ -34,17 +34,22 @@
 
 }
 
-const validateinputs = (event) => {
+const validateInputQuote = (event) => {
     event.preventDefault();
-    let elements = document.getElementsByClassName('form-control3');
+    let elements = document.getElementsByClassName('form-control2');
     let submit = true;
-    const name = document.getElementById("subject1").value;
-    const email = document.getElementById("subject2").value;
-    const subject = document.getElementById("subject").value;
-    const message = document.getElementById("message").value;
-  
- 
-
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const area = document.getElementById("address").value;
+    const school = document.getElementById("school").value;
+    const message = document.getElementById("quote-message").value;
+    console.log(name);
+    console.log(email);
+    console.log(phone);
+    console.log(school);
+    console.log(area);
+    console.log(message);
 
 
     for (let i = 0, im = elements.length; im > i; i++) {
@@ -55,7 +60,7 @@ const validateinputs = (event) => {
         }
     }
     if (submit) {
-        submitForm(name, email, subject, message);
+        submitFormQuote(name, email, phone, school, message);
     }
 
 
