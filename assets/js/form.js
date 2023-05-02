@@ -5,10 +5,6 @@
  * License: https://bootstrapmade.com/license/
  */
  const submitForm = (name, email, subject, message) => {
-    //  console.log(name);
-    //  console.log(email);
-    //  console.log(subject);
-    //  console.log(message);
 
     // POST request using fetch()
     fetch("https://18bsbinhgi.execute-api.us-east-1.amazonaws.com/develop/", {
@@ -27,7 +23,10 @@
         })
 
         // Converting to JSON
-        .then(response => response.json())
+        .then(response => { 
+            response.json();
+            document.getElementById("sent").style.display="block";
+        })
 
         // Displaying results to console
         .then(json => console.log(json));
@@ -36,14 +35,14 @@
 
 const validateinputs = (event) => {
     event.preventDefault();
-    let elements = document.getElementsByClassName('form-control3');
+    let elements = document.getElementsByClassName('form-control2');
     let submit = true;
     const name = document.getElementById("subject1").value;
     const email = document.getElementById("subject2").value;
     const subject = document.getElementById("subject").value;
     const message = document.getElementById("message").value;
   
- 
+
 
 
 

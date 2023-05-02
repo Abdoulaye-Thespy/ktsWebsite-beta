@@ -25,7 +25,11 @@
         })
 
         // Converting to JSON
-        .then(response => response.json())
+        .then(response => {
+            response.json();
+            document.getElementById("success-quote").style.display="block";
+            }
+            )
 
         // Displaying results to console
         .then(json => console.log(json));
