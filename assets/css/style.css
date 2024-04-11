@@ -433,6 +433,7 @@ h6 {
   background-color: rgba(60, 60, 60, 0.8);
   overflow: hidden;
   position: relative;
+  padding-top: 160px;
 }
 
 #hero .carousel,
@@ -570,9 +571,13 @@ h6 {
 
 @media (max-width: 992px) {
   #hero {
-    height: 100vh;
+    height: 140vh;
   }
 
+
+  #hero .container-fluid {
+    margin-bottom: 100px;
+  }
   #hero .container {
     margin-top: 100px;
   }
@@ -594,7 +599,7 @@ h6 {
 
 @media (max-height: 500px) {
   #hero {
-    height: 160vh;
+    height: 260vh;
   }
 }
 
@@ -1871,4 +1876,13 @@ section {
   font-weight: 600;
   font-size: 20px;
   border-radius: 5px;
+}
+
+
+@media (max-width: 994px) {
+  /* Your CSS rules for screens less than 994px */
+  .element {
+    /* CSS properties for the targeted element */4
+  }
+  #hero
 }
