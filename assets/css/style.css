@@ -439,7 +439,7 @@ h6 {
   background-color: rgba(60, 60, 60, 0.8);
   overflow: hidden;
   position: relative;
-  padding-top: 160px;
+  padding-top: 120px;
 }
 
 #hero .carousel,
@@ -622,9 +622,8 @@ section {
 }
 
 .section-title {
-  margin-top: 25px;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .section-title h2 {
