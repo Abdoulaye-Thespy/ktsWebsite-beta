@@ -578,6 +578,9 @@ h6 {
 }
 
 @media (max-width: 992px) {
+  #hero {
+    padding-top: 20px;
+  }
   #hero .container {
     width: 100%;
   }
