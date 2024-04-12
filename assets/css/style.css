@@ -619,6 +619,7 @@ section {
 }
 
 .section-title {
+  margin-top: 25px;
   text-align: center;
   padding-bottom: 30px;
 }
