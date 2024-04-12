@@ -340,6 +340,10 @@ h6 {
     display: block;
   }
 
+  .scrollto {
+      padding: 30px;
+  }
+
   .navbar ul {
     display: none;
   }
@@ -429,7 +433,6 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-
   min-height: 100vh;
   background-color: rgba(60, 60, 60, 0.8);
   overflow: hidden;
@@ -459,11 +462,9 @@ h6 {
 
 #hero .container {
   text-align: center;
-  background: rgba(255, 255, 255, 0.9);
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 50px;
-  border-top: 4px solid #3EA0F5;
 }
 
 @media (max-width: 1200px) {
