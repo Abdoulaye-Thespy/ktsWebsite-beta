@@ -1887,3 +1887,10 @@ section {
   font-size: 20px;
   border-radius: 5px;
 }
+
+
+.parallax-image ol li {
+  font-size: 30px;
+  padding: 10px;
+
+}
