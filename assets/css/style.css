@@ -435,11 +435,9 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  min-height: 100vh;
   background-color: rgba(60, 60, 60, 0.8);
   overflow: hidden;
   position: relative;
-  padding-top: 120px;
 }
 
 #hero .carousel,
@@ -465,8 +463,6 @@ h6 {
 #hero .container {
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 50px;
 }
 
 @media (max-width: 1200px) {
@@ -593,6 +589,9 @@ h6 {
   #hero h2 {
     font-size: 28px;
   }
+  .image-hero img {
+     height: 600px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -606,6 +605,11 @@ h6 {
 @media (max-height: 500px) {
   #hero {
     height: 260vh;
+  }
+
+    .image-hero img {
+     height: 200px;
+     width: 80px;
   }
 }
 
@@ -1882,13 +1886,4 @@ section {
   font-weight: 600;
   font-size: 20px;
   border-radius: 5px;
-}
-
-
-@media (max-width: 994px) {
-  /* Your CSS rules for screens less than 994px */
-  .element {
-    /* CSS properties for the targeted element */4
-  }
-  #hero
 }
